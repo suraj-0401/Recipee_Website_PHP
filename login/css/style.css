@@ -1,0 +1,23 @@
+
+
+.bg-custom{
+    background-image: url("../images/1.jpg");
+}
+.loginform{
+    background-image: url("../images/1.jpg");
+    position: absolute;
+    top:10em;
+    left:30em;
+    width:26em;
+    height:30em;
+    margin:8px;
+    padding: 8px;
+    border-radius:10px;
+}
+.icon{
+    text-align:center;
+    background:red;
+}
+body{
+   background-image: url("../images/1.jpg");
+}

@@ -1,0 +1,291 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+#tempp {
+    /* padding-left: 10px; */
+    margin-left: 230px;
+    position: absolute;
+    top: 8px;
+}
+
+/* for whole body */
+body {
+    background-image: url("../images/2.jpg") ;
+    width: 100%;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* for first nav */
+.nav {
+    background-color: #00695c;
+    width: 100%;
+    height: 30px;
+
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    right: 220px;
+}
+
+.nav ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin: 9px;
+}
+
+.nav ul li a {
+    size: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+@media(max-width:270px) {
+    
+}
+
+/* for 2nd nav or header  */
+.header {
+    /* background-color: silver; */
+    margin: 1px;
+    width: 100%;
+    height: 60px;
+}
+
+.header img {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    top: 8px;
+    left: 210px;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 210px;
+    margin: 15px;
+    padding: 10px;
+}
+
+.header ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin: 8px;
+    padding: 10px;
+    color: gray;
+
+}
+
+.header ul li a {
+    size: 50px;
+    text-decoration: none;
+    color: gray;
+}
+
+.header ul li a:hover {
+    color: red;
+}
+
+/* for dropdown */
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    background-color: green;
+    width: 100px;
+    position: absolute;
+    top: 32px;
+    right: -5px;
+    width: 138px;
+    display: none;
+    text-align: center;
+    /* height: 180px; */
+    border-radius: 5px;
+    padding: 11px;
+    line-height: 1px;
+    font-size: 13px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+@media (max-width:500px) {
+    .header ul li img {
+        visibility: hidden;
+        /* text-align: center; */
+
+    }
+}
+
+/* this is for videos  section */
+.temp {
+    /* padding-left: 25%;
+    padding-right: 3%; */
+
+    width: 100%;
+
+}
+
+.sub {
+    background: rgb(245, 242, 242);
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    height: 90px;
+    padding-left: 10px;
+
+}
+
+.sub h3 {
+    position: relative;
+    text-align: center;
+    top: 20px;
+
+}
+
+.sub video {
+    position: relative;
+    top: 65px;
+    background-color: black;
+    left: 65px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+/* for popular */
+#menu {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
+    background: rgb(245, 242, 242);
+    min-height: 100vh;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    top: 550px;
+    /* margin-left: 20px; */
+    left: 20px;
+    right: 20px;
+    width: 100%;
+
+}
+
+.heading {
+    background: rgb(245, 242, 242);
+    color: #373333;
+    margin-bottom: 30px;
+    padding: 60px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.card {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px;
+}
+
+.card img {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px 15px 0 0;
+}
+
+.details {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.details-sub {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.details-sub h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price {
+    text-align: right;
+}
+
+.details p {
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 25px;
+    align-self: stretch;
+}
+
+
+
+
+        /* for footer level */
+
+        .Footer{
+            width:104.5%;
+            position: absolute;
+            top: 515vh;
+            left:-18px;
+        }
+        .Footer ul{
+            display: flex;
+            justify-content: center;
+            height:19vh;
+            background-color:white;
+            margin:18px;
+            padding:12px;
+            gap:9px;
+            color:rgb(37, 33, 33);
+            /* border-radius: 3px;    */
+        }
+
+        .Footer ul li a{
+            color:rgb(28, 26, 26);
+            text-decoration: none;
+        }
+        .Footer p{
+            position: absolute;
+            left:38.4vw;
+            top:auto;
+            margin:45px;
+            padding: 8px;
+            font-size: 0.9em;
+            /* background-color: red; */
+        
+        }
